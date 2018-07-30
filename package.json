@@ -1,0 +1,22 @@
+{
+  "name": "node-mysql",
+  "version": "1.0.0",
+  "description": "An Amazon-like storefront with the MySQL and Node skills we learnt this week. The app will take in orders from customers and deplete stock from the store's inventory.",
+  "main": "bamazonconnection.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BradFabian/Node-Mysql.git"
+  },
+  "author": "Brad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BradFabian/Node-Mysql/issues"
+  },
+  "homepage": "https://github.com/BradFabian/Node-Mysql#readme",
+  "dependencies": {
+    "mysql": "^2.16.0"
+  }
+}
