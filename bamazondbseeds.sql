@@ -14,10 +14,10 @@ CREATE TABLE products (
 
 );
 
-SELECT * FROM products
+
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("Gibson Les Paul Standard", "Guitar", 800.99, 5 ),
+VALUES ("Gibson Les Paul Standard", "Guitar", 800.99, 5),
        ("Fender Telecaster Special", "Guitar", 999.99, 10), 
        ("Martin D-45", "Guitar", 780.99, 8), 
        ("Epiphone SG", "Guitar", 399.99, 3), 
@@ -27,3 +27,5 @@ VALUES ("Gibson Les Paul Standard", "Guitar", 800.99, 5 ),
        ("Pro Co Rat", "Distortion Pedal", 69.99, 2), 
        ("Boss Tube Screamer", "Distortion Pedal", 89.99, 6), 
        ("Dunlop Tortex Standard", "Guitar Picks", .89, 200);
+       
+       SELECT * FROM products;
