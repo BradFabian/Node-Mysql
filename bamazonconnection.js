@@ -101,6 +101,7 @@ function start() {
                 var dataName = data[i].product_name
               console.log("----------------------------------");
               console.log(dataName + " has " + newQty + " left in stock...");
+              connection.end()
               //updateProduct()
 
             /*  function updateProduct() {
