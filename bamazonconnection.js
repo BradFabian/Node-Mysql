@@ -101,12 +101,13 @@ function start() {
                 var dataName = data[i].product_name
               console.log("----------------------------------");
               console.log(dataName + " has " + newQty + " left in stock...");
+             
+             // updateProduct()
               connection.end()
-              //updateProduct()
 
-            /*  function updateProduct() {
+            /* function updateProduct() {
                 console.log("Updating all " + dataName + " quantities...\n");
-                var query = connection.query(
+                var queryUpdate = connection.query(
                   "UPDATE products SET ? WHERE item_id= " + item,
                   [
                     {
@@ -115,13 +116,10 @@ function start() {
                     },
                     
                   ],)
-                  console.log(query.sql);
-                  
-                 // connection.query("SELECT * FROM products", (err,res)=>{
-                  //  Tablefy(res);
-                   // start()
-                 // });*/
-              //  }//
+                 
+                  console.log(queryUpdate)
+                 
+             }*/
               
             } 
           }
