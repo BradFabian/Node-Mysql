@@ -102,24 +102,31 @@ function start() {
               console.log("----------------------------------");
               console.log(dataName + " has " + newQty + " left in stock...");
              
-             // updateProduct()
-              connection.end()
+              updateProduct()
+              connection.query("SELECT * FROM products", (err,res)=>{
+                let table = new Tablefy()
+                //console.log("res: ", res);
+                table.draw(res);
+                connection.end()
+              });
+  
+              
 
-            /* function updateProduct() {
+            function updateProduct() {
                 console.log("Updating all " + dataName + " quantities...\n");
                 var queryUpdate = connection.query(
                   "UPDATE products SET ? WHERE item_id= " + item,
                   [
                     {
-                      quantity: newQty,
+                      stock_quantity: newQty,
                     
                     },
                     
                   ],)
                  
-                  console.log(queryUpdate)
+                  
                  
-             }*/
+             }
               
             } 
           }
