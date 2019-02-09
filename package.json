@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/BradFabian/Node-Mysql#readme",
   "dependencies": {
-    "figlet": "^1.2.0",
-    "inquirer": "^6.0.0",
+    "figlet": "^1.2.1",
+    "inquirer": "^6.2.2",
     "mysql": "^2.16.0",
     "tablefy": "^1.0.3"
   }
